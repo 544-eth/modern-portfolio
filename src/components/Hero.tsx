@@ -3,6 +3,7 @@ import { Spotlight } from './ui/Spotlight'
 import { TextGenerator } from './ui/TextGenerateEffect'
 import Link from 'next/link'
 import MButton from './ui/MagicButton'
+import { FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -28,10 +29,10 @@ const Hero = () => {
             <p className=' text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl font-thin'>
               Hi, I&apos;m Francis, a Next.js Developer based in Nigeria.
             </p>
-            <Link href='#href'>
+            <Link href='/about'>
               <MButton 
               title='Show my work'
-              icon=''
+              icon={<FaLocationArrow/>}
               position='right'
               />
             </Link>
