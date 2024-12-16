@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import { FloatingNav } from "../components/ui/FlaotingNav";
 import { FaHome } from "react-icons/fa";
 import Gridex from "../components/Grid";
+import RecentProjects from "src/components/RecentProjects";
 
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
         <FloatingNav navItems={[
           {name: 'Home', link: '/', icon: <FaHome/>}
         ]}/>
-        <Hero/> 
-        <Gridex/>       
+        <Hero /> 
+        <Gridex /> 
+        <RecentProjects />      
       </div>
     </main>
   );
